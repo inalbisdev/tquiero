@@ -1,0 +1,44 @@
+.a-social{
+  display: flex;
+  background: #fff;
+  padding: 10px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: .6s background;
+  will-change: background;
+
+  svg{
+    width: 30px;
+    height: 30px;
+    path{
+      transition: fill .4s ease;
+    }
+  }
+
+  &--facebook{
+    &:hover{
+      background: #3b5998;
+      path{
+        fill: #fff;
+      }
+    }
+  }
+  &--twitter{
+    &:hover{
+      background: #1dcaff;
+      path{
+        fill: #fff;
+      }
+    }
+  }
+  &--instagram{
+    &:hover{
+      background: #8a3ab9;
+      path{
+        fill: #fff;
+      }
+    }
+  }
+
+}

@@ -1,0 +1,56 @@
+@import "../../../vars/default/default";
+
+.m-cookies{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: .6s transform, .6s opacity;
+  will-change: transform;
+  z-index: 10;
+  width: 100%;
+  padding: 20px;
+  pointer-events: none;
+  transform: translateY(100%);
+  background: #333;
+  opacity: 0;
+  @media (max-width: 767px){
+    flex-wrap: wrap;
+  }
+  &__text{
+    color: $color-white;
+    @media (min-width: 768px){
+      padding-right: 100px;
+    }
+    @media (max-width: 767px){
+      font-size: 12px;
+      line-height: 16px;
+      width: 100%;
+      margin-bottom: 16px;
+    }
+  }
+  &__link{
+    text-decoration: underline;
+    color: $color-white;
+    @media (max-width: 767px){
+      font-size: 12px;
+      line-height: 16px;
+    }
+  }
+  &__btn{
+    min-width: 150px;
+
+  }
+
+
+
+
+  .show-cookies &{
+    transform: translateY(0);
+    pointer-events: all;
+    opacity: 1;
+  }
+}
+

@@ -1,0 +1,38 @@
+@import "../../../vars/glob";
+
+.a-fav{
+  cursor: pointer;
+  &__icons{
+    border-radius: 50%;
+    width: 33px;
+    height: 33px;
+    background-color: $a-fav__icons-background;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+  }
+  &__icon{
+    position: absolute;
+    transition: .6s opacity;
+    color: $a-fav__icon-color;
+    opacity: 1;
+    &.is-hidden{
+      opacity: 0;
+    }
+    &.is-active{
+
+    }
+    &--cloned{
+      position: absolute;
+      transform: none;
+      transition: .6s all ease-in;
+      z-index: 100;
+    }
+  }
+
+
+
+}

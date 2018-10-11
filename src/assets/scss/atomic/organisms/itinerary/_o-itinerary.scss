@@ -1,0 +1,46 @@
+@import "../../../vars/default/default";
+
+.o-itinerary{
+  &__heading{}
+  &__content{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+
+  &__timeline{
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    border-left: 1px dashed #999;
+    position: absolute;
+  }
+  &__bullet{
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    background-color: $color-white;
+    border: 2px solid transparent;
+    &::before{
+      content: "";
+      display: block;
+      width: 15px;
+      height: 15px;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+  &__item{
+    width: 50%;
+    position: relative;
+    padding-right: 40px;
+
+    &--inv{
+      padding-right: 0;
+      padding-left: 40px;
+      align-self: flex-end;
+    }
+  }
+}

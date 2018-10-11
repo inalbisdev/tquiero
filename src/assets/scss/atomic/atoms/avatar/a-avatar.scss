@@ -1,0 +1,33 @@
+@import "../../../vars/default/default";
+
+.a-avatar{
+  display: flex;
+  align-items: center;
+  color: $color-white;
+  cursor: pointer;
+  text-decoration: none;
+  &__media{
+    object-fit: cover;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    transition: .6s transform,.6s border-color;
+    position: relative;
+    border: 2px solid transparent;
+    will-change: transform;
+  }
+  &__name{
+    margin-left: 15px;
+    max-width: 150px;
+    width: 100%;
+    white-space: pre;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+  &:hover{
+    .a-avatar__media{
+      border-color: $color-helio-trope;
+      transform: scale(1.1);
+    }
+  }
+}

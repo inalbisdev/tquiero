@@ -1,0 +1,22 @@
+@import "../../../vars/glob";
+
+.m-heading {
+  padding-bottom: $m-heading-padding-bottom;
+  &__title{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  &__emoji{
+    padding-left: 30px;
+  }
+  &__subtitle {
+      padding-top: 4px;
+  }
+  &--center{
+    text-align: center;
+    .m-heading__title{
+      justify-content: center;
+    }
+  }
+}

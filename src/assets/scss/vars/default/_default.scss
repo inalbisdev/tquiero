@@ -1,0 +1,266 @@
+/*********************************************************
+
+                  TABLE OF CONTENTS
+
+1. Global Settings
+  1.1 Base Font Configuration
+  1.2 Media Queries
+  1.3 Gel Grid Configuration
+  1.4 Color Variations
+  1.5 Gradient Variations
+  1.6 Vector Icons Mapping and Sizes
+
+2. Atoms
+  2.1 Buttons
+  2.2 Fav
+  2.3 Link
+  2.4 Picture
+  2.5 Tag
+
+
+3. Molecules
+  3.1 Card
+  3.2. Headings
+
+4. Organisms
+  4.1 Modal
+  4.2 Newsletter
+
+5. Layouts
+  5.1 Base Layout Configuration
+
+
+
+
+*********************************************************/
+
+/*1 Global Settings*/
+@font-face {
+  font-family: 'Jonshon Regular';
+  font-display: fallback;
+  src: local('Jonshon Regular'),
+  url(../typo/Jonshon_Regular.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Jonshon Bold';
+  font-display: fallback;
+  src: local('Jonshon Bold'),
+  url(../typo/Jonshon_Bold.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Plantin Regular';
+  font-display: fallback;
+  src: local('Plantin Regular'),
+  url(../typo/Plantin_Regular.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Plantin Italic';
+  font-display: fallback;
+  font-weight: 300;
+  src: local('Plantin Italic'),
+  url(../typo/Plantin_Italic.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Plantin Light';
+  font-display: fallback;
+  font-weight: 300;
+  src: local('Plantin Light'),
+  url(../typo/Plantin_Light.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Trade Gothic';
+  font-display: fallback;
+  font-weight: 300;
+  src: local('Trade Gothic'),
+  url(../typo/TradeGothicLTStd-Cn18.otf) format('truetype');
+}
+
+
+
+
+
+
+/*1.1 Base Font Configuration*/
+$base-font-fallback: Sans-serif, Helvetica, sans-serif !default;
+$base-font-custom : "Jonshon Regular" !default;
+$base-font-custom-bold: "Jonshon Bold" !default;
+
+$secondary-font-custom: "Plantin Regular" !default;
+$secondary-font-custom-light: "Plantin Light" !default;
+$secondary-font-custom-italic: "Plantin Italic" !default;
+
+$base-font-family: $base-font-custom,$base-font-fallback;
+$base-font-family-bold: $base-font-custom-bold, $base-font-fallback;
+
+$secondary-font-family: $secondary-font-custom, $base-font-fallback;
+$secondary-font-family-light: $secondary-font-custom-light, $base-font-fallback;
+
+
+$base-font-size: 16px !default;
+$base-line-height: 24px !default;
+$base-font-color: #333;
+
+
+/*1.2 Media Queries*/
+$screen-xs-max: 479px;
+$screen-s-min: 480px;
+$screen-s-max: 767px;
+$screen-m-min: 768px;
+$screen-m-max: 1023px;
+$screen-l-min: 1024px;
+$screen-l-max: 1199px;
+$screen-xl-min: 1200px;
+
+/*1.3 Gel Grid Configuration*/
+$gel-grid-enable--markup-output: true !default;
+$gel-spacing-unit: 16px !default;
+
+/*1.4 Color Variations*/
+$color-primary: #124823;
+$color-secondary: "";
+$color-tertiary: "";
+$color-quaternary: "";
+
+$color-black: #333 !default;
+$color-blue-berry: #5578dc !default;
+$color-blue-electric: #0013fe !default;
+$color-green: #5adc82 !default;
+$color-grey: #444 !default;
+$color-helio-trope: #ed80ff !default;
+$color-orange: #f1ca45 !default;
+$color-pink: #de80b8 !default;
+$color-red: #e62648 !default;
+$color-teal: #2a8b76 !default;
+$color-teal-light: #5bf0cc !default;
+$color-turquoise: #00b5d0 !default;
+$color-mustard: #d5a903 !default;
+$color-blue-light: #adc4f9 !default;
+$color-white: #fff !default;
+$brand-colors: (
+        "color-primary": $color-primary,
+        "color-secondary": $color-secondary,
+        "color-tertiary": $color-tertiary,
+        "black": $color-black,
+        "blue-berry": $color-blue-berry,
+        "blue-electric": $color-blue-electric,
+        "green": $color-green,
+        "grey": $color-grey,
+        "helio-trope": $color-helio-trope,
+        "orange": $color-orange,
+        "pink": $color-pink,
+        "red": $color-red,
+        "teal": $color-teal,
+        "teal-light": $color-teal-light,
+        "turquoise": $color-turquoise,
+        "mustard": $color-mustard,
+        "white": $color-white,
+        "blue-light": $color-blue-light
+) !default;
+
+/*1.5 Gradient Variations*/
+$gradient-illusion: linear-gradient(-135deg, #63C0F9 0%, #6AD97A 100%) !default;
+$gradient-emotion: linear-gradient(-135deg, $color-blue-electric 0%,$color-blue-berry 25%, $color-teal-light 50%,$color-pink 75%,$color-turquoise 100%) !default;
+$gradient-paranoia: linear-gradient(-135deg, #63C0F9 0%, #6AD97A 50%, #f1ca45 100%);
+$gradient-variations: (
+        "ilusion" : $gradient-illusion,
+        "emotion" : $gradient-emotion,
+        "paranoia" : $gradient-paranoia
+) !default;
+
+/*1.6 Vector Icons Mapping and Sizes*/
+$icons-font-family: "Way Icons" !default;
+$icons-file-name: "way" !default;
+$icons-base-font-size: 16px !default;
+$icons: (
+        "arrow-left": "\ea01",
+        "arrow-right": "\ea02",
+        "favorite-filled": "\ea03",
+        "favorite": "\ea04",
+        "review": "\ea05",
+        "share": "\ea06",
+) !default;
+$icons-sizes: (
+        "x1" : $icons-base-font-size * 1.25,
+        "x2" : $icons-base-font-size * 1.5,
+        "x3" : $icons-base-font-size * 1.75,
+        "x4" : $icons-base-font-size * 2,
+        "x5" : $icons-base-font-size * 2.25,
+        "x6" : $icons-base-font-size * 2.5,
+        "x7" : $icons-base-font-size * 2.75,
+        "x8" : $icons-base-font-size * 3
+) !default;
+
+
+
+/*2 Atoms*/
+
+/*2.1 Buttons*/
+$a-button-border-radius: 0 !default;
+$a-button-box-shadow: none !default;
+$a-button-border: none !default;
+$a-button-padding: 15px !default;
+$a-button-font-size: $base-font-size !default;
+$a-button-line-height: $base-line-height !default;
+
+/*Button Effect*/
+$a-animation-ripple: true !default;
+
+/*Button Variations*/
+$a-button-paris-background: $color-primary !default;
+$a-button-paris-color: $color-white !default;
+
+$a-button-berlin-background: $color-white !default;
+$a-button-berlin-color: $color-black !default;
+
+$a-button-moskva-background: $color-white !default;
+$a-button-moskva-color: $color-orange !default;
+
+$a-button-oslo-background: $color-white !default;
+$a-button-oslo-color: $color-primary !default;
+
+$a-button-dublin-background: $color-blue-electric !default;
+$a-button-dublin-color: $color-white !default;
+
+$a-button-roma-background: $color-white !default;
+$a-button-roma-color: $color-blue-electric !default;
+
+/*2.2 Fav*/
+$a-fav__icons-background: $color-white !default;
+$a-fav__icon-color: $color-red !default;
+
+/*2.3 Link*/
+$a-link-color: $color-blue-berry !default;;
+
+/*2.4 Picture*/
+$a-picture-border-radius: 12px !default;
+
+/*2.5 Tags*/
+$a-tag-background: $color-white !default;
+$a-tag-border-radius: 12px !default;
+
+
+/*3.Molecules*/
+
+/*3.1 Card*/
+$m-card__media-border-radius : $a-picture-border-radius !default;
+$m-card__media-box-shadow : 0 0 5px 1px rgba(183, 183, 183, 0.75) !default;
+
+/*3.2 Headings*/
+$m-heading-padding-bottom: 35px !default;
+
+/*4.Organisms*/
+
+/*4.1 Modal*/
+$o-modal-z-index: 900;
+
+/*4.2 Newsletter*/
+$o-newsletter-box-shadow: $m-card__media-box-shadow !default;
+$o-newsletter-border-radius: $m-card__media-border-radius !default;
+
+/*5 Layouts*/
+
+/*5.1 Base Layout Configuration*/
+$l__container-max-width: 1366px !default;
+$l__container-left-padding: 30px !default;
+$l__container-right-padding: 30px !default;

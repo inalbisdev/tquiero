@@ -1,0 +1,11 @@
+@import "../../../vars/glob";
+
+.a-tag{
+  background-color: $a-tag-background;
+  border-radius: $a-tag-border-radius;
+  padding: 5px 10px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 17px;
+}

@@ -1,0 +1,69 @@
+@import "../../../vars/glob";
+@import "../../../mixins/glob";
+
+/*Modifiers based on cientific names*/
+
+.a-typo {
+  &-tesla {
+    font-family: $base-font-custom-bold;
+    color: $color-primary;
+    font-size: 36px;
+    line-height: 40px;
+    text-transform: uppercase
+  }
+  &-hawking {
+    font-family: $base-font-custom;
+    color: $color-primary;
+    font-size: 26px;
+    line-height: 30px;
+  }
+
+  &-newton {
+    font-family: $secondary-font-custom-light;
+    color: $color-primary;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 300;
+  }
+
+
+
+  &-edison {
+    font-family: $secondary-font-custom;
+    color: $color-primary;
+    font-size: 26px;
+    line-height: 30px;
+    font-weight: 600;
+  }
+
+
+  &-einstein {
+    font-family: $secondary-font-custom;
+    color: $color-primary;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+
+  &-curie {
+    @include generateTypo(28px, 40px);
+    letter-spacing: -0.5px;
+  }
+  &-kepler {
+    @include generateTypo(16px, 24px);
+  }
+  &-mendel {
+    @include generateTypo(14px, 17px);
+  }
+  &-pascal {
+    @include generateTypo(24px, 28px);
+  }
+  &-has-left-line {
+    padding-left: 16px;
+    border-left: 8px solid #333;
+  }
+  &-has-right-line {
+    padding-right: 16px;
+    border-right: 8px solid #333;
+  }
+}

@@ -1,0 +1,14 @@
+@import "../../../vars/default/default";
+
+.a-input{
+  border-radius: 0;
+  color: #124823;
+  border: 1px solid #124823;
+  background: #fff;
+  height: 40px;
+  padding: 6px;
+  width: 100%;
+  &::placeholder{
+    color: $color-primary;
+  }
+}

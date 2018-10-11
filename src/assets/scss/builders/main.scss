@@ -1,0 +1,45 @@
+/*********************************************************
+
+                  TABLE OF CONTENTS
+
+1. Vars and Mixins
+2. Global Reset
+3. Vendors and themes
+4. Atoms
+5. Molecules
+6. Organisms
+7. Layouts
+8. Utils
+
+*********************************************************/
+
+/*1 Vars and Mixins*/
+@import "../vars/glob";
+@import "../mixins/glob";
+
+/*2 Global Reset*/
+@import "../vendors/normalize";
+@import "../base/reset";
+
+/*3 Vendors and themes*/
+@import "../../../../node_modules/gel-sass-tools/sass-tools";
+@import "../../../../node_modules/sass-mq/mq";
+@import "../../../../node_modules/gel-grid/grid";
+@import "../../../../node_modules/slick-carousel/slick/slick.scss";
+@import "../vendors/slick-custom-theme";
+@import "../vendors/ui-datepicker";
+
+/*4 Atoms*/
+@import "../atomic/atoms/glob";
+
+/*5 Molecules*/
+@import "../atomic/molecules/glob";
+
+/*6 Organisms*/
+@import "../atomic/organisms/glob";
+
+/*7 Layouts*/
+@import "../atomic/layouts/glob";
+
+/*8 Utils*/
+@import "../utils/glob";

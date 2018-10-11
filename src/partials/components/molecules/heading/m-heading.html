@@ -1,0 +1,17 @@
+<div class="m-heading {{this.elemclass}}">
+    {{#each this.attr.[0].title}}
+        <h3 class="m-heading__title a-typo-pascal {{class}}">
+            {{{text}}}
+            {{#if this.emoji}}
+                <div class="m-heading__emoji">
+                    {{#each this.emoji}}
+                        {{{this}}}
+                    {{/each}}
+                </div>
+            {{/if}}
+        </h3>
+    {{/each}}
+    {{#each this.attr.[0].subtitle}}
+        <h4 class="m-heading__subtitle a-typo-mendel">{{{text}}}</h4>
+    {{/each}}
+ </div>

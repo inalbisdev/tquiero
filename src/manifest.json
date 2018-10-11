@@ -1,0 +1,39 @@
+{
+  "name": "Progresive Wep App",
+  "short_name": "PWA",
+  "start_url": "http://127.0.0.1:3000",
+  "icons": [{
+    "src": "https://drd6faa76nfyj.cloudfront.net/webApp/assets/img/logo/logo-128x128.png",
+    "sizes": "128x128",
+    "type": "image/png"
+  },
+    {
+      "src": "https://drd6faa76nfyj.cloudfront.net/webApp/assets/img/logo/logo-144x144.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    },
+    {
+      "src": "https://drd6faa76nfyj.cloudfront.net/webApp/assets/img/logo/logo-152x152.png",
+      "sizes": "152x152",
+      "type": "image/png"
+    },
+    {
+      "src": "https://drd6faa76nfyj.cloudfront.net/webApp/assets/img/logo/logo-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "https://drd6faa76nfyj.cloudfront.net/webApp/assets/img/logo/logo-256x256.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    },
+    {
+      "src": "https://dummyimage.com/512x512/000/fff.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "display": "standalone",
+  "background_color": "#36A18F",
+  "theme_color": "#36A18F"
+}

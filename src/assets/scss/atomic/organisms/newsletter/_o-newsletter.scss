@@ -1,0 +1,13 @@
+@import "../../../vars/default/default";
+
+.o-newsletter{
+  background: $gradient-illusion;
+  padding: 50px;
+  box-shadow: $o-newsletter-box-shadow;
+  border-radius: $o-newsletter-border-radius;
+  &__title{}
+  &__form{}
+  &__input{}
+  &__button{}
+  &__legend{}
+}

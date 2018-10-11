@@ -1,0 +1,16 @@
+@import "../../../vars/glob";
+
+.a-picture{
+  img.lazyload,
+  img.lazyloading{
+    opacity: 0;
+    transition: opacity .4s;
+  }
+  img.lazyloaded{
+    opacity: 1;
+  }
+  img{
+    transition: opacity .4s;
+    border-radius: $a-picture-border-radius;
+  }
+}

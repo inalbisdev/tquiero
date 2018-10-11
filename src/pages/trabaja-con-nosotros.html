@@ -1,0 +1,645 @@
+---
+layout: default
+title: Trabaja con nosotros
+---
+
+<style>
+
+</style>
+
+
+<div class="m-form-message" style="display: none;">
+    <div class="m-form-message__content">
+        <div class="m-form-message__close">
+            X
+        </div>
+        <p>
+            Tu solicitud ha sido enviada correctamente, muchas gracias!
+        </p>
+    </div>
+</div>
+
+
+<section class="l l--fit l-work">
+    <div class="m-form-work tcn_container">
+
+        <h1 class="a-typo-tesla u-mb-64">ENVIANOS<br> TU SOLICITUD</h1>
+
+        <form action="https://grupotragaluz.com/wp-content/plugins/trabaja_con_nosotros/recogida_datos_v1.php" method="POST" enctype="multipart/form-data" id="tcn_formulario">
+
+            <!-- Validation messages -->
+            <div class="send_error msgerror obligatorios">Rellena todos los campos obligatorios</div>
+            <div class="send_error msgerror msgemail">Introduce un email válido</div>
+            <div class="send_error msgerror letradni">La letra de tu DNI no corresponde</div>
+            <div class="send_error msgerror msgdni">Debes introducir un DNI válido sin espacios ni guiones</div>
+            <div class="send_error msgerror msgnie">Debes introducir un NIE válido sin espacios ni guiones</div>
+            <div class="send_error msgerror msgfoto">Solo puedes adjuntar tu foto en JPG, PNG o GIF</div>
+            <!-- // Validation messages -->
+
+
+            <!-- 1 Parte -->
+            <div class="m-form-work__row m-form-work__row--1">
+                <div class="m-form-work__heading">
+                    1 - Datos personales
+                </div>
+                <div class="m-form-work__col m-form-work__col--little">
+                    <div class="content-img-user">
+                        <div class="img-user">
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35;" xml:space="preserve">
+
+        <g id="Capa_2">
+        	<g>
+        		<g>
+        			<path class="st3" d="M17.5,14c-2.9,0-5.2,2.4-5.2,5.2c0,2.9,2.4,5.2,5.2,5.2c2.9,0,5.2-2.4,5.2-5.2C22.8,16.4,20.4,14,17.5,14z
+        				 M31.5,8.8h-4.2c-0.6,0-1.2-0.4-1.4-1l-1.1-3.3c-0.2-0.5-0.8-1-1.4-1H11.6c-0.6,0-1.2,0.4-1.4,1L9.1,7.8c-0.2,0.5-0.8,1-1.4,1
+        				H3.5C1.6,8.8,0,10.3,0,12.2V28c0,1.9,1.6,3.5,3.5,3.5h28c1.9,0,3.5-1.6,3.5-3.5V12.2C35,10.3,33.4,8.8,31.5,8.8z M17.5,28
+        				c-4.8,0-8.8-3.9-8.8-8.8c0-4.8,3.9-8.8,8.8-8.8c4.8,0,8.8,3.9,8.8,8.8C26.2,24.1,22.3,28,17.5,28z M30.3,14.7
+        				c-0.7,0-1.2-0.5-1.2-1.2c0-0.7,0.5-1.2,1.2-1.2c0.7,0,1.2,0.5,1.2,1.2C31.5,14.1,31,14.7,30.3,14.7z"></path>
+        		</g>
+        	</g>
+        </g>
+        </svg>
+                        </div>
+                    </div>
+                    <div class="content-caja-blanca-pequena caja-foto pointer">
+                        <div class="tcn_boton_img" id="img-user" style="display: block;">
+                            Sube una fotografía
+
+                            <div class="m-form-work__button-icon">
+                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 35 35" style="enable-background:new 0 0 35 35;" xml:space="preserve">
+
+<g id="Capa_2">
+	<g>
+		<g>
+			<path class="st3" d="M17.5,14c-2.9,0-5.2,2.4-5.2,5.2c0,2.9,2.4,5.2,5.2,5.2c2.9,0,5.2-2.4,5.2-5.2C22.8,16.4,20.4,14,17.5,14z
+				 M31.5,8.8h-4.2c-0.6,0-1.2-0.4-1.4-1l-1.1-3.3c-0.2-0.5-0.8-1-1.4-1H11.6c-0.6,0-1.2,0.4-1.4,1L9.1,7.8c-0.2,0.5-0.8,1-1.4,1
+				H3.5C1.6,8.8,0,10.3,0,12.2V28c0,1.9,1.6,3.5,3.5,3.5h28c1.9,0,3.5-1.6,3.5-3.5V12.2C35,10.3,33.4,8.8,31.5,8.8z M17.5,28
+				c-4.8,0-8.8-3.9-8.8-8.8c0-4.8,3.9-8.8,8.8-8.8c4.8,0,8.8,3.9,8.8,8.8C26.2,24.1,22.3,28,17.5,28z M30.3,14.7
+				c-0.7,0-1.2-0.5-1.2-1.2c0-0.7,0.5-1.2,1.2-1.2c0.7,0,1.2,0.5,1.2,1.2C31.5,14.1,31,14.7,30.3,14.7z"/>
+		</g>
+	</g>
+</g>
+</svg>
+                            </div>
+
+                        </div>
+                        <input id="imginput" type="file" name="fileimg"/>
+                    </div>
+                </div>
+                <div class="m-form-work__col m-form-work__col--big">
+                    <div class="content-caja-blanca-pequena caja-tratamiento content-caja-check">
+                        <input class="checksr check_oculto obligatorio checkn checkin" type="radio" name="tratamiento" id="sr"
+                               value="sr"><label class="texto-caja caja-radio caja-radio-h" for="sr">Sr.</label>
+                        <input class="checksr check_oculto obligatorio checkn checkin" type="radio" name="tratamiento" id="sra"
+                               value="sra"><label class="texto-caja caja-radio caja-radio-h" for="sra">Sra.</label>
+                    </div>
+
+
+                    <div class="m-form-work__input-group">
+                        <div class="content-caja-blanca-pequena desplega">
+                            <input class="tcn_input_nombre obligatorio" type="text" name="nombre" placeholder="Nombre"/>
+                        </div>
+
+
+                        <div class="content-caja-blanca-pequena desplega">
+                            <input class="tcn_input_apellidos obligatorio" type="text" name="apellidos" placeholder="Apellidos"/>
+                        </div>
+
+
+                        <div class="content-caja-blanca-pequena desplega">
+                            <input class="tcn_input_correo obligatorio" type="text" name="correo" placeholder="Correo electrónico"/>
+                        </div>
+
+
+                        <div class="content-caja-blanca-pequena desplega">
+                            <input class="tcn_input_telefono obligatorio" type="text" name="telefono" placeholder="Teléfono"/>
+                        </div>
+                    </div>
+
+                    <div class="m-form-work__input-group">
+                        <div class="content-caja-blanca-pequena desplega">
+                            <span class="texto-caja">Fecha de nacimiento</span>
+                            <div class="content-select reset-select">
+                                <div class="reset-select__input">
+                                    <select class="select-dia" name="dia">
+                                        <option value="0">día</option>
+                                        <option value='1'>1</option>
+                                        <option value='2'>2</option>
+                                        <option value='3'>3</option>
+                                        <option value='4'>4</option>
+                                        <option value='5'>5</option>
+                                        <option value='6'>6</option>
+                                        <option value='7'>7</option>
+                                        <option value='8'>8</option>
+                                        <option value='9'>9</option>
+                                        <option value='10'>10</option>
+                                        <option value='11'>11</option>
+                                        <option value='12'>12</option>
+                                        <option value='13'>13</option>
+                                        <option value='14'>14</option>
+                                        <option value='15'>15</option>
+                                        <option value='16'>16</option>
+                                        <option value='17'>17</option>
+                                        <option value='18'>18</option>
+                                        <option value='19'>19</option>
+                                        <option value='20'>20</option>
+                                        <option value='21'>21</option>
+                                        <option value='22'>22</option>
+                                        <option value='23'>23</option>
+                                        <option value='24'>24</option>
+                                        <option value='25'>25</option>
+                                        <option value='26'>26</option>
+                                        <option value='27'>27</option>
+                                        <option value='28'>28</option>
+                                        <option value='29'>29</option>
+                                        <option value='30'>30</option>
+                                        <option value='31'>31</option>
+                                    </select>
+                                </div>
+                                <div class="reset-select__input">
+                                    <select class="select-mes" name="mes">
+                                        <option value="0">mes</option>
+                                        <option value='1'>Enero</option>
+                                        <option value='2'>Febrero</option>
+                                        <option value='3'>Marzo</option>
+                                        <option value='4'>Abril</option>
+                                        <option value='5'>Mayo</option>
+                                        <option value='6'>Junio</option>
+                                        <option value='7'>Julio</option>
+                                        <option value='8'>Agosto</option>
+                                        <option value='9'>Septiembre</option>
+                                        <option value='10'>Octubre</option>
+                                        <option value='11'>Noviembre</option>
+                                        <option value='12'>Diciembre</option>
+                                    </select>
+                                </div>
+                                <div class="reset-select__input">
+                                    <select class="select-ano" name="ano">
+                                        <option value="0">año</option>
+                                        <option value='1950'>1950</option>
+                                        <option value='1951'>1951</option>
+                                        <option value='1952'>1952</option>
+                                        <option value='1953'>1953</option>
+                                        <option value='1954'>1954</option>
+                                        <option value='1955'>1955</option>
+                                        <option value='1956'>1956</option>
+                                        <option value='1957'>1957</option>
+                                        <option value='1958'>1958</option>
+                                        <option value='1959'>1959</option>
+                                        <option value='1960'>1960</option>
+                                        <option value='1961'>1961</option>
+                                        <option value='1962'>1962</option>
+                                        <option value='1963'>1963</option>
+                                        <option value='1964'>1964</option>
+                                        <option value='1965'>1965</option>
+                                        <option value='1966'>1966</option>
+                                        <option value='1967'>1967</option>
+                                        <option value='1968'>1968</option>
+                                        <option value='1969'>1969</option>
+                                        <option value='1970'>1970</option>
+                                        <option value='1971'>1971</option>
+                                        <option value='1972'>1972</option>
+                                        <option value='1973'>1973</option>
+                                        <option value='1974'>1974</option>
+                                        <option value='1975'>1975</option>
+                                        <option value='1976'>1976</option>
+                                        <option value='1977'>1977</option>
+                                        <option value='1978'>1978</option>
+                                        <option value='1979'>1979</option>
+                                        <option value='1980'>1980</option>
+                                        <option value='1981'>1981</option>
+                                        <option value='1982'>1982</option>
+                                        <option value='1983'>1983</option>
+                                        <option value='1984'>1984</option>
+                                        <option value='1985'>1985</option>
+                                        <option value='1986'>1986</option>
+                                        <option value='1987'>1987</option>
+                                        <option value='1988'>1988</option>
+                                        <option value='1989'>1989</option>
+                                        <option value='1990'>1990</option>
+                                        <option value='1991'>1991</option>
+                                        <option value='1992'>1992</option>
+                                        <option value='1993'>1993</option>
+                                        <option value='1994'>1994</option>
+                                        <option value='1995'>1995</option>
+                                        <option value='1996'>1996</option>
+                                        <option value='1997'>1997</option>
+                                        <option value='1998'>1998</option>
+                                        <option value='1999'>1999</option>
+                                        <option value='2000'>2000</option>
+                                        <option value='2001'>2001</option>
+                                        <option value='2002'>2002</option>
+                                        <option value='2003'>2003</option>
+                                        <option value='2004'>2004</option>
+                                        <option value='2005'>2005</option>
+                                        <option value='2006'>2006</option>
+                                        <option value='2007'>2007</option>
+                                        <option value='2008'>2008</option>
+                                        <option value='2009'>2009</option>
+                                        <option value='2010'>2010</option>
+                                        <option value='2011'>2011</option>
+                                        <option value='2012'>2012</option>
+                                        <option value='2013'>2013</option>
+                                        <option value='2014'>2014</option>
+                                        <option value='2015'>2015</option>
+                                        <option value='2016'>2016</option>
+                                        <option value='2017'>2017</option>
+                                        <option value='2018'>2018</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="content-caja-check content-caja-blanca-pequena caja-dni">
+                            <input class="checkdni check_oculto obligatorio" type="radio" name="checkdni" id="dni" value="dni">
+                            <label class="texto-caja caja-radio caja-radio-h" for="dni">DNI</label>
+                            <input class="checkdni check_oculto obligatorio" type="radio" name="checkdni" id="nie" value="nie">
+                            <label class="texto-caja caja-radio caja-radio-h" for="nie">NIE</label>
+                            <input class="tcn_input_nif" type="text" id="inputdni" name="dni" placeholder="Introduce DNI"/>
+                            <input class="tcn_input_nif" type="text" id="inputnie" name="nie" placeholder="Introduce NIE"/>
+                        </div>
+                    </div>
+
+
+
+
+
+                    <!-- Provincia -->
+                    <div class="m-form-work__province caja-provincia content-caja-check">
+                        <div class="texto-caja m-form-work__check-title">Provincia</div>
+                        <ul>
+                            <li>
+
+                                <input class="checkprov check_oculto obligatorio checkn" type="radio" name="provincia" id="barcelona" value="Barcelona">
+                                <label class="texto-caja caja-radio caja-radio-h" for="barcelona">Barcelona</label>
+                            </li>
+                            <li>
+                                <input class="checkprov check_oculto obligatorio checkn" type="radio" name="provincia" id="madrid" value="Madrid">
+                                <label class="texto-caja caja-radio caja-radio-h" for="madrid">Madrid</label>
+                            </li>
+                            <li>
+                                <input class="checkprov check_oculto obligatorio checkn" type="radio" name="provincia" id="mallorca" value="Palma de Mallorca">
+                                <label class="texto-caja caja-radio caja-radio-h" for="mallorca">Palma de Mallorca</label>
+                            </li>
+                        </ul>
+
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- 2 parte -->
+            <div class="m-form-work__row m-form-work__row--2">
+                <div class="ancla_work"></div>
+                <div class="send_error msgerror trabajos">Debes seleccionar de 1 a 3 puestos</div>
+                <div class="m-form-work__col m-form-work__col--little">
+                    <div class="m-form-work__heading m-form-work__heading--has-border">
+                        2 - Elije tu &aacute;rea/secci&oacute;n <br>(m&aacute;ximo 3 puestos)
+                    </div>
+                </div>
+                <div class="m-form-work__col m-form-work__col--big">
+
+
+                    <div class="m-form-work__input-group">
+                        <div>
+                            <div class="content-caja-blanca desplega  m-form-work__check-title">
+                                COCINA
+                                <i class="fa fa-angle-down right" aria-hidden="true"></i>
+                            </div>
+                            <div class="desplegar info-restaurante margin-bottom-20">
+                                <div class="info-contacto">
+                                    <div class="info-cago content-contacto">
+                                        <div class="tcn_cargo">Jefe/a de cocina</div>
+                                        <div class="tcn_cargo">Cocinero/a</div>
+                                        <div class="tcn_cargo">Ayudante de cocina</div>
+                                        <div class="tcn_cargo">Friegaplatos</div>
+                                        <div class="tcn_cargo">Pastelería</div>
+                                        <div class="tcn_cargo">Panadería</div>
+                                    </div>
+                                </div><!--FIN INFO-CONTACTO-->
+                            </div>
+                        </div>
+                        <div>
+                            <div class="content-caja-blanca desplega  m-form-work__check-title">
+                                SALA
+                                <i class="fa fa-angle-down right" aria-hidden="true"></i>
+                            </div>
+                            <div class="desplegar info-restaurante margin-bottom-20">
+                                <div class="info-contacto">
+                                    <div class="info-cargo content-contacto">
+                                        <div class="tcn_cargo">Director/a Restaurante</div>
+                                        <div class="tcn_cargo">Jefe/a de sala</div>
+                                        <div class="tcn_cargo">Sommelier</div>
+                                        <div class="tcn_cargo">Camarero/a</div>
+                                        <div class="tcn_cargo">Ayudante de Camarero/a</div>
+                                        <div class="tcn_cargo">Coctelero/a</div>
+                                        <div class="tcn_cargo">Repasador/a</div>
+                                        <div class="tcn_cargo">Hostess</div>
+                                    </div>
+                                </div><!--FIN INFO-CONTACTO-->
+                            </div>
+                        </div>
+                        <div>
+                            <div class="content-caja-blanca desplega  m-form-work__check-title">
+                                PRÁCTICAS
+                                <i class="fa fa-angle-down right" aria-hidden="true"></i>
+                            </div>
+                            <div class="desplegar info-restaurante margin-bottom-20">
+                                <div class="info-contacto">
+                                    <div class="info-cargo content-contacto">
+                                        <div class="tcn_cargo">Dirección</div>
+
+                                        <div class="tcn_cargo">Sala</div>
+
+
+                                    </div>
+                                </div><!--FIN INFO-CONTACTO-->
+                            </div>
+
+                        </div>
+                        <div>
+                            <div class="content-caja-blanca desplega  m-form-work__check-title">
+                                SERVICIOS CENTRALES
+                                <i class="fa fa-angle-down right" aria-hidden="true"></i>
+                            </div>
+                            <div class="desplegar info-restaurante margin-bottom-20">
+                                <div class="info-contacto">
+                                    <div class="info-cargo content-contacto">
+                                        <div class="tcn_cargo">Almacén</div>
+                                        <div class="tcn_cargo">Compras</div>
+                                        <div class="tcn_cargo">Recursos Humanos</div>
+                                        <div class="tcn_cargo">Finanzas</div>
+                                        <div class="tcn_cargo">Dirección</div>
+                                        <div class="tcn_cargo">Comercial</div>
+                                        <div class="tcn_cargo">Técnico de mantenimiento</div>
+
+                                    </div>
+                                </div><!--FIN INFO-CONTACTO-->
+                            </div>
+                        </div>
+                        <div>
+                            <div class="content-caja-blanca   m-form-work__check-title">
+                                OTROS
+                            </div>
+                            <div class="desplegar info-restaurante margin-bottom-20">
+                                <div class="info-contacto">
+                                        <div class="info-cargo content-contacto">
+
+                                            <textarea name="otros_cargos" id="tcn_input_otros" class="tcn_input_otros" rows='1' placeholder='Escribe aquí...'></textarea>
+
+                                    </div>
+                                </div><!--FIN INFO-CONTACTO-->
+                            </div>
+
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </div>
+            </div>
+
+            <!-- 3 parte -->
+            <div class="m-form-work__row m-form-work__row--3">
+                <div class="ancla_trabajo"></div>
+                <div class="send_error msgerror obligatorios_2">Rellena todos los campos obligatorios</div>
+                <div class="m-form-work__col m-form-work__col--little">
+                    <div class="m-form-work__heading m-form-work__heading--has-border">
+                        3 - Elige la forma en la que te<br> gustaría trabajar.
+                    </div>
+                </div>
+                <div class="m-form-work__col m-form-work__col--big">
+                    <div class="content-caja-check content-caja-blanca-pequena caja-turnos pointer">
+
+                        <ul>
+                            <li>
+                                <input type="radio" name="forma_trabajo" class="turnos check_oculto obligatorio checkn" id="turnos1" value="fijos">
+                                <label class="texto-caja caja-radio" for="turnos1">Permanente</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="forma_trabajo" class="turnos check_oculto obligatorio checkn" id="turnos2" value="extras">
+                                <label class="texto-caja caja-radio" for="turnos2">Extras</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="forma_trabajo" class="turnos check_oculto obligatorio checkn" id="turnos3" value="ambos">
+                                <label class="texto-caja caja-radio" for="turnos3">Ambos</label>
+                            </li>
+                        </ul>
+
+
+
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- 4 parte -->
+            <div class="m-form-work__row m-form-work__row--4">
+                <div class="m-form-work__col m-form-work__col--little">
+                    <div class="m-form-work__heading m-form-work__heading--has-border">
+                        4 - Indica tu disponibilidad<br> y jornada laboral.
+                    </div>
+                </div>
+                <div class="m-form-work__col m-form-work__col--big">
+                    <div class="m-form-work__input-group">
+                        <div>
+                            <p class="titular-caja  m-form-work__check-title">Incorporación</p>
+                            <div class="content-caja-check content-caja-blanca-pequena caja-incorporacion pointer">
+
+                                <ul>
+                                    <li>
+                                        <input type="radio" name="incorporacion" class="incorporacion check_oculto obligatorio checkn" id="incorporacion1" value="inmediata">
+                                        <label class="texto-caja caja-radio" for="incorporacion1">Inmediata</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" name="incorporacion" class="incorporacion check_oculto obligatorio checkn" id="incorporacion2" value="15 dias">
+                                        <label class="texto-caja caja-radio" for="incorporacion2">15 días</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" name="incorporacion" class="incorporacion check_oculto obligatorio checkn" id="incorporacion3" value="otra">
+                                        <label class="texto-caja caja-radio" for="incorporacion3">Otra</label>
+                                        <input class="tcn_input_disp datepicker" type="text" id="inputdisp" name="incorporacion_otra" placeholder="Introduce disponibilidad"/>
+                                    </li>
+                                </ul>
+
+
+
+
+
+
+                            </div>
+
+                        </div>
+                        <div>
+                            <p class="titular-caja  m-form-work__check-title">Disponibilidad</p>
+                            <div class="content-caja-blanca-pequena content-caja-check caja-disponibilidad pointer">
+
+                                <ul>
+                                    <li>
+                                        <input type="radio" name="disponibilidad" class="disponibilidad check_oculto obligatorio checkn" id="disponibilidad1" value="Completa">
+                                        <label class="texto-caja caja-radio" for="disponibilidad1">Completa</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" name="disponibilidad" class="disponibilidad check_oculto obligatorio checkn" id="disponibilidad2" value="Fines de semana">
+                                        <label class="texto-caja caja-radio" for="disponibilidad2">Fines de semana</label>
+                                    </li>
+                                    <li>
+
+                                        <input type="radio" name="disponibilidad" class="disponibilidad check_oculto obligatorio checkn" id="disponibilidad3" value="otra">
+                                        <label class="texto-caja caja-radio" for="disponibilidad3">Otra</label>
+                                        <input class="tcn_input_disp" type="text" id="inputdisp2" name="disponibilidad_otra" placeholder="Introduce disponibilidad"/>
+                                    </li>
+                                </ul>
+
+
+
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- 5 Parte -->
+
+            <div class="m-form-work__row m-form-work__row--5">
+                <div class="send_error msgerror msgcv">Debes subir un currículum. Solo puedes
+                    adjuntar tu currículum en PDF, JPG, PNG o GIF
+                </div>
+                <div class="send_error msgerror msgcv2">Solo puedes adjuntar tu currículum en
+                    JPG, PNG o GIF. Si es un PDF, por favor, envía un único archivo
+                </div>
+                <div class="ancla_comentarios"></div>
+                <div class="m-form-work__col m-form-work__col--little">
+                    <div class="m-form-work__heading m-form-work__heading--has-border">
+                        5 - Adjunta tu currículum vitae en PDF.
+                        <br>
+                        <div class="u-mt-16">Si lo deseas puedes escribir el comentario que creas oportuno</div>
+                    </div>
+                </div>
+                <div class="m-form-work__col m-form-work__col--big">
+                    <div class="content-cv-pag first">
+                        <div class="content-caja-blanca-pequena desplega pointer">
+                            <div class="tcn_boton_archivo" id="file">
+                                Subir archivo
+                                <div class="m-form-work__button-icon">
+                                    <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 35 35" style="enable-background:new 0 0 35 35;" xml:space="preserve">
+                                    <g>
+                                        <path class="st0" d="M26,14.4c0,0,1.4-1.1,0.3-2.2s-2.1,0.3-2.1,0.3L13.4,23.4c0,0-2.5,3.3-4.5,1.3c-1.9-2,1.3-4.5,1.3-4.5L24.4,6
+		c0,0,3.3-3.6,6.4-0.5c3.1,3.1-0.5,6.4-0.5,6.4L14.4,27.9c0,0-5.1,5.9-9.8,1.2s1.2-9.8,1.2-9.8L17.9,7.2c0,0,1.4-1.1,0.3-2.2
+		c-1-1-2.2,0.3-2.2,0.3L2.2,19.3c0,0-5.2,5.8,0.6,11.6c5.9,5.9,11.6,0.6,11.6,0.6l19.1-19.1c0,0,3.8-4.2-0.7-8.8S24,2.9,24,2.9
+		L7.6,19.3c0,0-4.2,3.4-0.4,7.2c3.8,3.8,7.2-0.4,7.2-0.4L26,14.4z"/>
+                                    </g>
+                                    </svg>>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="anadir_cv"><i class="fa fa-plus-square-o" aria-hidden="true"></i> Añadir página de CV</span>
+                        <input id="fileinput" type="file" name="file"/>
+                    </div>
+
+                    <div class="content-cv-pag">
+                        <div class="content-caja-blanca-pequena desplega pointer">
+                            <div class="tcn_boton_archivo" id="file2">
+                                Subir archivo <i class="fa fa-arrow-up" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <span class="anadir_cv"><i class="fa fa-plus-square-o" aria-hidden="true"></i>Añadir página de CV</span>
+                        <input id="fileinput2" type="file" name="file2"/>
+                    </div>
+                    <div class="content-cv-pag">
+                        <div class="content-caja-blanca-pequena desplega pointer">
+                            <div class="tcn_boton_archivo" id="file3">
+                                Subir archivo <i class="fa fa-arrow-up" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <span class="anadir_cv"><i class="fa fa-plus-square-o" aria-hidden="true"></i>Añadir página de CV</span>
+                        <input id="fileinput3" type="file" name="file3"/>
+                    </div>
+                    <div class="content-cv-pag">
+                        <div class="content-caja-blanca-pequena desplega pointer">
+                            <div class="tcn_boton_archivo" id="file4">
+                                Subir archivo <i class="fa fa-arrow-up" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <span class="anadir_cv"><i class="fa fa-plus-square-o" aria-hidden="true"></i>Añadir página de CV</span>
+                        <input id="fileinput4" type="file" name="file4"/>
+                    </div>
+                    <div class="content-cv-pag">
+                        <div class="content-caja-blanca-pequena desplega pointer">
+                            <div class="tcn_boton_archivo" id="file5">
+                                Subir archivo <i class="fa fa-arrow-up" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <input id="fileinput5" type="file" name="file5"/>
+                    </div>
+                    <textarea class="tcn_comentarios" name="comentarios" placeholder="Comentarios"></textarea>
+                </div>
+
+            </div>
+
+
+
+            <!-- 6 Parte -->
+            <div class="m-form-work__row m-form-work__row--6">
+                <div class="send_error msgerror msgpolitica">Debes aceptar la política de privacidad.</div>
+                <div class="send_error msgerror msgcaptcha">Captcha no válido.</div>
+                <div class="m-form-work__col m-form-work__col--little">
+                    <div class="m-form-work__heading m-form-work__heading--has-border">
+                        6 - Enviar Solicitud
+                    </div>
+                    <div class="m-form-work__lucky">Pulsa en enviar solicitud y ¡suerte!</div>
+                    <input type="checkbox" id="checkbox" class="requerido check_oculto" name="politica">
+                    <label class="caja-check">He leido y acepto la <a href="https://grupotragaluz.com/condiciones-y-terminos-legales/">Política de privacidad</a></label>
+                </div>
+                <div class="m-form-work__col m-form-work__col--big">
+                    <div class="content-captcha">
+                        <div class="operacion">
+                            8 + 10 = <input class="resultado" name="captchaResult" type="text" size="2"/>
+                        </div>
+                        <input class="firstNumber" name="firstNumber" type="hidden" value="8"/>
+                        <input class="secondNumber" name="secondNumber" type="hidden" value="10"/>
+                    </div>
+                    <input type="hidden" name="tcn_cargos" id="tcn_cargos"/>
+                </div>
+
+            </div>
+
+
+
+            <div class="m-form-work__submit">
+                <div class="tcn_boton_enviar tcn_boton_enviar_formulario a-button a-button--paris">Enviar solicitud</div>
+            </div>
+
+
+
+
+
+
+
+        </form>
+    </div>
+</section>
+
+
+

@@ -1,0 +1,55 @@
+
+<article id="{{this.attr.[0].id}}" class="m-card {{this.attr.[0].elemclass}}">
+    <div class="m-card__media">
+        {{#each this.attr.[0].media}}
+            {{> a-picture this}}
+        {{/each}}
+    </div>
+    <div class="m-card__body">
+    {{#if this.attr.[0].actions}}
+        <div class="m-card__actions">
+            {{#each this.attr.[0].actions}}
+                <div class="m-card__tag">
+                    {{> a-tag this.tag}}
+                </div>
+                <div class="m-card__fav">
+                    {{> a-fav this.fav}}
+                </div>
+            {{/each}}
+        </div>
+    {{/if}}
+        <div class="m-card__content">
+            {{#if this.attr.[0].title}}
+                {{#each this.attr.[0].title}}
+                    <div class="m-card__title">
+                        {{>a-typo this}}
+                    </div>
+                {{/each}}
+            {{/if}}
+            {{#if this.attr.[0].subtitle}}
+                {{#each this.attr.[0].subtitle}}
+                    <div class="m-card__subtitle">
+                        {{>a-typo this}}
+                    </div>
+                {{/each}}
+            {{/if}}
+
+            {{#if this.attr.[0].text}}
+                <div class="m-card__text">
+                    {{#each this.attr.[0].text}}
+                         <p {{#if class}} class="{{class}}"{{/if}}>{{text}}</p>
+                    {{/each}}
+                </div>
+            {{/if}}
+
+
+            {{#if this.attr.[0].button}}
+                <div class="m-card__button">
+                    {{#each this.attr.[0].button}}
+                        {{> a-button this}}
+                    {{/each}}
+                </div>
+            {{/if}}
+        </div>
+    </div>
+</article>

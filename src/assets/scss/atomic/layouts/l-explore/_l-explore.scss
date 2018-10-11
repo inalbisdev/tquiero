@@ -1,0 +1,12 @@
+@import "../../../vars/glob";
+
+
+.l-explore{
+  &--small{
+    .m-card{
+      &:not(:last-child){
+        margin-bottom: 48px;
+      }
+    }
+  }
+}

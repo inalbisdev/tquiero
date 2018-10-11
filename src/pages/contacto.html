@@ -1,0 +1,109 @@
+---
+layout: default
+title: Contacto
+---
+
+
+<section class="l l--fit l--contact l-two">
+    <aside class="l-two__aside">
+        <h1 class="a-typo-tesla">Contacto</h1>
+    </aside>
+    <div class="l-two__article">
+
+        <div class="o-contact">
+            <div class="o-contact__item">
+                <div class="m-newsletter">
+                    <h3 class="o-contact__title">Newsletter</h3>
+                    <p class="o-contact__text">
+                        Quieres recibir informaci&oacute;n sobre novedades?<i> Suscr&iacute;bete a nuestra <span>Newsletter</span></i>
+                    </p>
+                    <form method="post" name="newsletter">
+                        <div class="m-newsletter__row">
+                            <div class="m-newsletter__col">
+                                <div class="m-newsletter__field">
+                                    <input class="a-input" placeholder="Correo"/>
+                                </div>
+                                <div class="m-newsletter__field">
+                                    <input type="checkbox" id="checkbox" class="requerido check_oculto" name="politica">
+                                    <label class="caja-check ">He leido y acepto la <a target="_blank" href="https://grupotragaluz.com/condiciones-y-terminos-legales/">Política de privacidad</a></label>
+                                </div>
+                            </div>
+                            <div class="m-newsletter__col">
+                                <div class="m-newsletter__button">
+                                    <a class="a-button a-button--paris">Suscribirse</a>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                    </form>
+                </div>
+            </div>
+            <div class="o-contact__item">
+                <div class="m-contact-data">
+                    <h3 class="o-contact__title o-contact__title--desktop">Datos de contacto</h3>
+                    <h3 class="o-contact__title o-contact__title--mobile">Contacto</h3>
+
+                    <div class="m-contact-data__col">
+                        <div class="m-contact-data__info">
+                            <div class="m-contact-data__item">Mail: <a href="mailto:info@tquiero.es">info@tquiero.es</a></div>
+                            <div class="m-contact-data__item m-contact-data__item--phone">Telf.: (+34) 934 877 672</div>
+                            <div class="m-contact-data__item m-contact-data__item--phone-mobile">Telf.: <a href="tel:(+34)934877672">(+34) 934 877 672</a></div>
+                        </div>
+                        <div class="m-contact-data__media">
+                            <img src="{{root}}assets/media/images/contact/contact-ilustracion.png"/>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="m-contact-form">
+
+                    <div class="m-contact__form-show-in-send" style="display: none">
+                        <h3 class="o-contact__title">Gracias por ponerte en contacto</h3>
+                        <p>Nos pondremos en contacto contigo lo antes posible</p>
+                    </div>
+
+                    <div class="m-contact__form-remove-in-send">
+                    <h3 class="o-contact__title o-contact__title--desktop">Formulario de contacto</h3>
+                    <p class="m-contact-form__claim">
+                        Rellena el siguiente formulario <span>y nos pondremos en contacto contigo lo antes posible</span>:
+                    </p>
+                    <form method="post" name="contact" id="contactForm">
+                        <div class="m-contact-form__field">
+                            <input type="text" class="a-input is-required" data-error="Introduce un nombre por favor" placeholder="Nombre" name="name"/>
+                        </div>
+                        <div class="m-contact-form__field">
+                            <input type="text" class="a-input is-required" data-error="Introduce un apellido por favor"  placeholder="Apellidos" name="surname"/>
+                        </div>
+                        <div class="m-contact-form__field">
+                            <input type="email" class="a-input is-required" data-error="Introduce un email por favor" placeholder="Email" name="email"/>
+                        </div>
+                        <div class="m-contact-form__field">
+                            <input type="tel" class="a-input is-required" data-error="Introduce un teléfono por favor" placeholder="Telefono" name="phone"/>
+                        </div>
+                        <div class="m-contact-form__field">
+                            <input type="text" class="a-input" placeholder="Empresa *(opcional)" name="surname"/>
+                        </div>
+                        <div class="m-contact-form__field">
+                            <div class="m-newsletter__row">
+                                <input type="checkbox" id="contactConditions" class=" check_oculto is-required" name="contactConditions" data-error="Debes aceptar las políticas de privacidad"/>
+                                <label class="caja-check ">He leido y acepto la <a target="_blank" href="https://grupotragaluz.com/condiciones-y-terminos-legales/">Política de privacidad</a></label>
+                            </div>
+                        </div>
+                        <div class="m-contact-form__button">
+                            <button id="submitContact" class="a-button a-button--paris">Enviar</button>
+                        </div>
+                    </form>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+</section>

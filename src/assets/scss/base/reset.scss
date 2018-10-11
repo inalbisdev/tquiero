@@ -1,0 +1,36 @@
+@import "../vars/glob";
+@import "../mixins/glob";
+
+*,
+*::before,
+*::after{
+  box-sizing: border-box;
+}
+
+body{
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+  font-family: $base-font-family;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,h2,h3,h4,h5,h6,p,a,span{
+  @include textReset();
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+}
+
+picture{
+  display: block;
+}
+
+img{
+  max-width: 100%;
+}
+
+ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}

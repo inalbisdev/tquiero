@@ -1,0 +1,14 @@
+.o-navigation{
+  position: fixed;
+  top: 0;
+  left: 0;
+  &__inner{
+    display: flex;
+  }
+  &__item{
+    padding: 0 10px;
+  }
+  &__link{
+
+  }
+}

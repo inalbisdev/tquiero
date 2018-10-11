@@ -1,0 +1,95 @@
+@import "../../vars/glob";
+
+/*********************************************************
+
+                  TABLE OF CONTENTS
+
+1. Text Manipulation
+
+2. Colors generators
+
+3. Media Manipulation
+
+4. Visibility Manipulation
+
+
+
+*********************************************************/
+
+/*1 Text Manipulation*/
+
+.u-light{
+  font-weight: 300;
+}
+.u-regular{
+  font-weight: 400;
+}
+.u-semibold{
+  font-weight: 600;
+}
+.u-bold{
+  font-weight: 700;
+}
+.u-uppercase{
+  text-transform: uppercase;
+}
+
+.u-underline{
+  text-decoration: underline;
+}
+
+
+.u-jh-regular{
+  font-family: $base-font-custom;
+}
+.u-jh-bold{
+  font-family: $base-font-custom-bold;
+}
+.u-pl-regular{
+  font-family: $secondary-font-custom;
+}
+.u-pl-light{
+  font-family: $secondary-font-custom-light;
+}
+.u-pl-italic{
+  font-family: $secondary-font-custom-italic;
+}
+
+
+/*2. Colors generators*/
+
+.u-bg{
+  @each $name, $value in $brand-colors{
+    &-#{$name}{
+      background: $value;
+    }
+  }
+}
+.u-color{
+  @each $name, $value in $brand-colors{
+    &-#{$name}{
+      color: $value;
+    }
+  }
+}
+.u-gradient{
+  @each $name, $value in $gradient-variations{
+    &-#{$name}{
+      color: $value;
+    }
+  }
+}
+
+
+/*3. Media Manipulation*/
+
+.u-media-cover{
+  object-fit: cover;
+  width: 100%;
+}
+
+/*4. Media Manipulation*/
+.u-hidden{
+  overflow: hidden;
+}
+

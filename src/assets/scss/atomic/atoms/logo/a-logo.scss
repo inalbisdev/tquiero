@@ -1,0 +1,13 @@
+.a-logo{
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  &__part{
+    &--1{
+
+    }
+    &--2{
+      margin-left: 20px;
+    }
+  }
+}

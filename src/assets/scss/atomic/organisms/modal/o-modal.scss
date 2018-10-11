@@ -1,0 +1,42 @@
+@import "../../../vars/default/default";
+
+.o-modal{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: $o-modal-z-index;
+  background: rgba($color-blue-berry,.85);
+  transition: .6s transform, .6s opacity;
+  transform: translateY(80%) skewY(20deg);
+  opacity: 0;
+  pointer-events: none;
+  will-change: transform, opacity;
+  &__close{
+    color: $color-white;
+    font-size: 30px;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  &__header{
+    padding-bottom: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__inner{
+    padding: 64px 5vw;
+    color: $color-white;
+  }
+  &.is-open{
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: all;
+  }
+
+}

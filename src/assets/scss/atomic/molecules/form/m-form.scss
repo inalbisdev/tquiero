@@ -1,0 +1,671 @@
+@import "../../../vars/default/default";
+.msgerror {
+  padding: 16px;
+}
+
+.send_error, .send_error_email, .send_error_check {
+  background: rgba(187, 121, 112, 0.71);
+  width: 100%;
+  padding: 8px;
+  color: white;
+  border: 1px solid #ffffff;
+  border-radius: 2px;
+  margin-bottom: 16px;
+  display: none;
+}
+.tcn_listado{margin:40px 10px 20px;clear: both;}
+.tcn_title{ font-size: 20px; border-bottom: 1px solid #dfdfdf;cursor: pointer;display: block; font-size: 20px; font-weight: normal; letter-spacing: normal; line-height: 1.5em;}
+.tcn_sector_title{overflow: hidden;border-bottom: 1px solid #dfdfdf; margin-bottom:20px;padding: 0 10px;}
+.tcn_sector{float: left;background: transparent url("https://grupotragaluz.com/wp-content/themes/tragaluz/img/trabaja/plus-white.png") no-repeat scroll 0px center;padding-left:26px;cursor:pointer;}
+.tcn_selecciona{float: right;background: transparent url("https://grupotragaluz.com/wp-content/themes/tragaluz/img/trabaja/square-white.png") no-repeat scroll right center;padding-right:26px;}
+.tcn_cargo{position:relative;margin:12px 0;font-size:16px;cursor:pointer;}
+.tcn_cargo:before {    content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  left: -25px;
+  top: 1px;
+  border: 1px solid #124823;
+}
+.tcn_cargo_seleccionado{background-image: url("https://grupotragaluz.com/wp-content/themes/tragaluz/img/trabaja/square-white.png") !important;}
+.tcn_cargo_seleccionado:before{background: #124823;}
+.tcn_boton_archivo{overflow: hidden;width: 278px;max-width:100%;height: 44px; line-height: 46px;cursor:pointer;float: left;margin-left:10px;font-size:17px;top: -7px;font-weight: 600;position: relative;}
+.tcn_boton_archivo i {position: absolute;right: 9px;top: 0;bottom: 0;line-height: 40px;}
+/*input.tcn_input_correo{float: left; margin: 5px 0 5px 50px;width: 250px;}*/
+
+.tcn_linea{overflow: hidden;}
+textarea.tcn_comentarios{height: 12em; resize: vertical;width: 100%;padding: 10px;}
+.tcn_explicacion_enviar{font-size:14px;margin:12px 0 34px 34px;}
+//#file {display:none;}
+input.tcn_input_otros, input.tcn_input_correo, input.tcn_input_nombre, input.tcn_input_apellidos, input.tcn_input_nacimiento,input.tcn_input_telefono{width: 100%;border: none;padding: 6px;font-size: 16px;color: #0a0000;}
+::-webkit-input-placeholder {color: #0a0000;}
+::-moz-placeholder {color: #0a0000;}
+:-ms-input-placeholder {color: #0a0000;}
+:-moz-placeholder {color: #0a0000;}
+.tcn_oculto{display: none;}
+.jornada {    width: 100%;height: 31px;background: white;border: none;}
+.content-checkbox label {font-size: 16px;margin-left: 5px;color: #0a0000;}
+.titular-caja {font-size: 18px;}
+.tcn_input_nif {display:none;width: 100%;padding: 6px;}
+.tcn_input_disp {display:none;border: 1px solid #ededed;width: 97%;padding: 6px;font-size: 16px;}
+.caja-dni {padding-top: 13px;max-height: 72px;}
+.caja-tratamiento {padding-top: 13px;}
+.content-img-user {width: 170px;height: 170px;background: #e2e2e2;border-radius: 50%;position: relative;margin-top: 20px;}
+.content-img-user i {position: absolute;top: 0px;bottom: 0;margin: auto;left: 0;right: 0;width: 88px;height: 103px;font-size: 110px;color: #ededed;}
+.caja-foto {margin-top: 20px;}
+.tcn_boton_img {overflow: hidden;width: 175px;height: 44px;line-height: 46px;cursor: pointer;float: left;margin-left: 10px;font-size: 17px;font-weight: 600;position: relative;}
+.tcn_boton_img i {position: absolute;right: 0;top: 0;bottom: 0;line-height: 40px;}
+.content-caja-blanca-pequena {min-height: 47px;}
+.g-recaptcha {float: right;margin:10px 0;}
+.check_oculto {display: none;}
+.caja-radio-h {left: 20px !important;}
+.caja-radio-h:before {left: -19px !important;}
+.caja-radio {position: relative;left: 31px;margin-right: 20px;}
+.caja-radio::before {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  left: -25px;
+  border: 1px solid #124823;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.caja-radio.selec:before{background: #124823;}
+.caja-check {position: relative;left: 31px;margin-right: 20px;}
+.caja-check:before {content: ""; position:absolute;width:15px;height:15px;left: -25px;border: 1px solid #525252;-webkit-transition: all .2s ease-in;transition: all .2s;-moz-transition: all .2s;box-shadow: inset 0 0 0 0 white;background: white;top: 50%;transform: translateY(-50%);}
+.caja-check.selec:before{background: #124823;}
+.msgerror{padding: 15px;}
+.content-cv-pag,.anadir_cv {display: none;}
+.content-cv-pag.first {display: block;}
+.anadir_cv {float: left;background: white;padding: 10px 0;font-size: 16px;cursor: pointer;}
+.anadir_cv i {font-size: 15px;margin-right: 7px;}
+
+.texto-caja{
+  font-family: $secondary-font-custom;
+  color: $color-primary;
+  font-size: 18px;
+}
+.content-select{
+  margin-top: 16px;
+}
+
+.m-form-admin {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 450px;
+  padding: 30px;
+  margin: 100px auto;
+  background: $color-primary;
+
+  &__title{
+    text-transform: uppercase;
+    font-family: $base-font-custom-bold;
+    font-size: 22px;
+    color: $color-white;
+    margin: 0 auto;
+    padding-bottom: 30px;
+  }
+
+  form{
+    width: 100%;
+  }
+
+  &__heading{
+    width: 100%;
+    text-align: center;
+  }
+
+  .a-button{
+    font-size: 22px;
+    line-height: 26px;
+    width: 80%;
+    margin: 60px auto 0;
+    color: #124823;
+    padding: 10px;
+  }
+
+
+  &__field{
+    display: flex;
+    flex-flow: column-reverse;
+    margin-bottom: 12px;
+    width: 100%;
+    position: relative;
+    img{
+      position: absolute;
+      right: 0;
+      width: 20px;
+      height: 20px;
+      bottom: 5px;
+    }
+
+  }
+
+  label, input {
+    transition: all 0.2s;
+    touch-action: manipulation;
+  }
+
+  input {
+    font-size: 16px;
+    border: 0;
+
+    -webkit-appearance: none;
+    border-radius: 0;
+    padding: 0;
+    cursor: text;
+    height: 30px;
+    background: none;
+    padding-left: 15px;
+    color: $color-white;
+    border-bottom: 1px solid rgba($color-white,.6);
+
+  }
+
+  input:focus {
+    outline: 0;
+    box-shadow: 0 2px 2px -2px  $color-secondary;
+  }
+
+  label {
+    text-transform: none;
+    color: #fff;
+    font-family: $secondary-font-custom-light;
+    font-size: 12px;
+    padding-left: 15px;
+  }
+  /**
+  * Translate down and scale the label up to cover the placeholder,
+  * when following an input (with placeholder-shown support).
+  * Also make sure the label is only on one row, at max 2/3rds of the
+  * field—to make sure it scales properly and doesn't wrap.
+  */
+  input:placeholder-shown + label {
+    cursor: text;
+    max-width: 66.66%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transform-origin: left bottom;
+    transform: translate(0, 2.125rem) scale(1.5);
+  }
+  /**
+  * By default, the placeholder should be transparent. Also, it should
+  * inherit the transition.
+  */
+  ::-webkit-input-placeholder {
+    opacity: 0;
+    transition: inherit;
+    font-size: 16px;
+    color: #fff;
+  }
+  /**
+  * Show the placeholder when the input is focused.
+  */
+  input:focus::-webkit-input-placeholder {
+    opacity: 1;
+  }
+  /**
+  * When the element is focused, remove the label transform.
+  * Also, do this when the placeholder is _not_ shown, i.e. when
+  * there's something in the input at all.
+  */
+  input:not(:placeholder-shown) + label,
+  input:focus + label {
+    transform: translate(0, 0) scale(1);
+    cursor: pointer;
+  }
+
+}
+
+
+
+.m-form-work{
+
+  #tcn_input_otros{
+    overflow:hidden;
+    /* demo only: */
+    padding: 10px;
+    width: 100%;
+    display:block;
+    resize: none;
+    min-height: 40px;
+    line-height: 20px;
+
+  }
+  &__row--2{
+    .desplega{
+      position: relative;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      .fa-angle-down{
+        border: solid #124823;
+        border-width: 0 3px 3px 0;
+        padding: 3px;
+        transform: rotate(45deg);
+        margin-top: -6px;
+        margin-left: 15px;
+        display: inline-block;
+        transition: .6s transform;
+      }
+      &.is-active{
+        .fa-angle-down{
+          transform: rotate(-45deg);
+        }
+      }
+    }
+  }
+
+
+
+
+  &__submit{
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  textarea{
+    border: 1px solid $color-primary !important;
+    color: $color-primary;
+    border-radius: 0;
+  }
+
+  &__check-title{
+    color: $color-primary;
+    font-family: $base-font-family-bold;
+    font-size: 20px;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 16px;
+  }
+
+
+  &__province{
+    margin-top: 16px;
+  }
+
+  &__input-group{
+    display: flex;
+    flex-wrap: wrap;
+
+    @media (min-width: 768px){
+      > div{
+        width: 50%;
+        padding-bottom: 20px;
+        &:nth-child(1),
+        &:nth-child(3){
+          padding-right: 20px;
+        }
+        &:nth-child(2),
+        &:nth-child(4){
+          padding-left: 20px;
+        }
+      }
+
+    }
+    @media (max-width: 767px){
+      > div{
+        width: 100%;
+        padding-bottom: 20px;
+        &:nth-child(1),
+        &:nth-child(3){
+
+        }
+        &:nth-child(2),
+        &:nth-child(4){
+
+        }
+      }
+
+    }
+
+
+  }
+
+  &__row{
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 64px;
+    &:last-child{
+      margin-bottom: 0;
+    }
+
+    &--1{
+      .m-form-work__col--little{
+        @media (min-width: 1024px){
+          padding-right: 80px;
+        }
+      }
+    }
+
+    &--6{
+      align-items: flex-end;
+      a{
+        text-decoration: underline;
+        color: $color-primary;
+      }
+    }
+
+  }
+
+
+  &__lucky{
+    color: $color-primary;
+    font-size: 18px;
+    margin-bottom: 16px;
+  }
+
+  &__heading{
+    width: 100%;
+    font-family: $secondary-font-custom-italic;
+    color: $color-primary;
+    font-size: 20px;
+    margin-bottom: 32px;
+
+    &--has-border{
+      position: relative;
+      &::before{
+        width: 95%;
+        height: 1px;
+        content: "";
+        background: $color-primary;
+        display: block;
+        position: absolute;
+        top: 0;
+      }
+      padding-top: 32px;
+    }
+  }
+
+  &__col{
+    &--little{
+      width: 100%;
+      @media (min-width: 768px){
+        width: 30%;
+      }
+    }
+    &--big{
+      width: 100%;
+      @media (min-width: 768px){
+        width: 70%;
+        padding-left: 50px;
+      }
+    }
+
+  }
+
+  .caja-tratamiento label {
+    margin-right: 50px;
+  }
+
+  .content-img-user{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .img-user{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    svg{
+      width: 120px;
+      path{
+        fill: #c6c6c6;
+      }
+    }
+  }
+
+
+
+
+  label, input {
+    transition: all 0.2s;
+    touch-action: manipulation;
+  }
+
+  input[type=text] {
+    border-radius: 0;
+    color: $color-primary;
+
+    border: 1px solid $color-primary;
+    background: $color-white;
+    height: 40px;
+  }
+
+  input:focus {
+    outline: 0;
+    box-shadow: 0 2px 2px -2px  $color-primary;
+  }
+
+  label {
+    text-transform: none;
+    color: $color-primary;
+    font-family: $secondary-font-custom;
+    font-size: 16px;
+  }
+  /**
+  * Translate down and scale the label up to cover the placeholder,
+  * when following an input (with placeholder-shown support).
+  * Also make sure the label is only on one row, at max 2/3rds of the
+  * field—to make sure it scales properly and doesn't wrap.
+  */
+  input:placeholder-shown + label {
+    cursor: text;
+    max-width: 66.66%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transform-origin: left bottom;
+    transform: translate(0, 2.125rem) scale(1.5);
+  }
+  /**
+  * By default, the placeholder should be transparent. Also, it should
+  * inherit the transition.
+  */
+  ::-webkit-input-placeholder {
+    opacity: 1;
+    transition: inherit;
+    font-size: 16px;
+    color: $color-primary;
+  }
+  /**
+  * Show the placeholder when the input is focused.
+  */
+  input:focus::-webkit-input-placeholder {
+    opacity: 1;
+  }
+  /**
+  * When the element is focused, remove the label transform.
+  * Also, do this when the placeholder is _not_ shown, i.e. when
+  * there's something in the input at all.
+  */
+  input:not(:placeholder-shown) + label,
+  input:focus + label {
+    transform: translate(0, 0) scale(1);
+    cursor: pointer;
+  }
+
+
+
+
+  .tcn_cargo{
+    padding-left: 25px;
+    text-transform: none;
+    color: #124823;
+    font-family: $secondary-font-custom;
+    font-size: 16px;
+    &::before{
+      left: 0px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+
+
+  .content-img-user{
+    margin: 0 auto;
+  }
+
+  &__button-icon{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 33%;
+    transform: translateY(-50%);
+    right: 15px;
+    svg{
+      width: 20px;
+      height: 20px;
+      path{
+        fill: #fff;
+      }
+    }
+  }
+
+  .tcn_boton_img{
+    background: #c6c6c6;
+    margin-left: 0;
+    text-align: center;
+    width: 100%;
+    color: #fff;
+  }
+
+  .tcn_boton_archivo{
+    background: #c6c6c6;
+    margin-left: 0;
+    text-align: center;
+    max-width: 300px;
+    width: 100%;
+    color: #fff;
+  }
+
+  .tcn_boton_enviar{
+    max-width: 300px;
+    width: 100%;
+    @media (max-width: 767px){
+      max-width: 100%;
+    }
+  }
+  .reset-select{
+    display: flex;
+    &__input{
+      position: relative;
+      flex: 1;
+      margin-right: 5px;
+      &:last-child{
+        margin-right: 0;
+      }
+
+      &::after{
+        border: solid $color-primary;
+        border-width: 0 3px 3px 0;
+        display: inline-block;
+        padding: 3px;
+        transform: rotate(45deg) translateY(-100%);
+        content: "";
+        position: absolute;
+        top: 50%;
+        right: 20px;
+      }
+    }
+    select{
+      background: #fff;
+      width: 100%;
+      color: $color-primary;
+      position: relative;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      border: none;
+
+    }
+  }
+
+  .caja-dni{
+    .texto-caja{
+      margin-right: 30px;
+    }
+  }
+
+
+
+  .content-captcha{
+    @media (max-width: 767px){
+      margin-top: 16px;
+    }
+    .operacion{
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      font-size: 18px;
+      color: $color-primary;
+      font-family: $secondary-font-custom-light;
+      input{
+        margin-left: 16px;
+        width: 40px;
+        height: 40px;
+      }
+    }
+  }
+
+  .error{
+    .m-form-work .tcn_boton_archivo{
+      border: 1px solid rgb(255, 0, 0) !important;
+    }
+    .reset-select__input{
+      border: 1px solid rgb(255, 0, 0) !important;
+    }
+    .caja-check:before,
+    .caja-radio::before{
+      border: 1px solid rgb(255, 0, 0) !important;
+    }
+    input[type=text]{
+      border: 1px solid rgb(255, 0, 0) !important;
+    }
+  }
+
+
+
+}
+
+
+.m-form-message{
+  position: relative;
+  top: 0;
+  left: 0;
+  background: white;
+  width: 100%;
+  height: calc(100vh - 80px);
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  p{
+    margin: 0;
+    font-family: $secondary-font-custom-italic;
+    color: $color-white;
+    font-size: 36px;
+    line-height: 40px;
+  }
+  &__close{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    color: $color-white;
+  }
+  &__content{
+    margin: 0 20px;
+    max-width: 450px;
+    padding: 30px;
+    background: #B3B9B3;
+    text-align: center;
+    position: relative;
+  }
+}
