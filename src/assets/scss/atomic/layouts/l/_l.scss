@@ -15,7 +15,7 @@
 
   &-footer{
     padding: 20px 50px 50px;
-    background: #B3B9B3;
+    background: #8e8e8b;
     display: flex;
     position: relative;
     justify-content: space-between;
@@ -28,7 +28,7 @@
     padding: 20px 50px;
     background: #fff;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: space-between;
     @media (max-width: 767px){
       flex-direction: column;

@@ -93,7 +93,7 @@
     align-items: center;
     padding-top: 16px;
     img{
-      max-width: 200px;
+      max-width: 150px;
       @media (max-width: 1300px){
         max-width: 150px;
       }
@@ -130,9 +130,11 @@
     &-logo{
       .a-logo__part--1{
         width: 20px;
+        height: 20px;
       }
       .a-logo__part--2{
         width: 70px;
+        height: 22px;
         margin-left: 10px;
       }
     }

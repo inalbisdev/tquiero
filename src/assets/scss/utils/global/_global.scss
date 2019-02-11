@@ -93,3 +93,38 @@
   overflow: hidden;
 }
 
+.tabla-default {
+  border: 1px solid #CCC;
+  padding: 20px;
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 1rem;
+  background-color: transparent;
+  border-collapse: collapse;
+  border-spacing: 0;
+
+}
+.tabla-default td {
+  border: 1px solid #dee2e6;
+  padding: .75rem;
+  vertical-align: top;
+  color: #616161;
+  font-size: 18px;
+}
+
+.u-list{
+  li{
+    margin-bottom: 16px;
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+}
+
+.link-blue{
+  color: #337ab7;
+  text-decoration: none;
+  span{
+    font-size: 20px;
+  }
+}

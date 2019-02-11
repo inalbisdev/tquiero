@@ -34,7 +34,7 @@
   }
 
   &--bg-1 {
-    background-color: #B3B9B3;
+    background-color: #8E8E8B;
   }
 
   /*Cols*/
@@ -102,7 +102,7 @@
     font-size: 36px;
     line-height: 40px;
     font-weight: 300;
-    font-family: $secondary-font-custom-light;
+    font-family: $secondary-font-custom;
     @media (max-width: 480px) {
       font-size: 22px;
       line-height: 26px;
@@ -112,8 +112,11 @@
     &--little{
       font-size: 24px;
       line-height: 30px;
+      max-width: 540px;
+      margin: 64px auto 0;
       @media (max-width: 480px){
-        display: none;
+        font-size: 18px;
+        line-height: 24px;
       }
     }
 
@@ -140,7 +143,7 @@
       font-weight: 600;
       font-size: 22px;
       display: inline-flex;
-      padding: 20px 35px;
+      padding: 10px 35px;
       @media (max-width: 480px){
         padding: 15px 30px;
       }
@@ -327,7 +330,7 @@
       }
       &--right {
         right: -60px;
-        bottom: -160px;
+        bottom: -80px;
       }
       img{
         transform: scale(.70);
